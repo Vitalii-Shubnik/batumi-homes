@@ -3,7 +3,7 @@ import LeftRightArrows from '../shared/LeftRightArrows'
 
 const ForSell = ({ next, prev, forSell, changing }) => {
   return (
-    <div className='flex flex-col xl:flex-row gap-16 xl:gap-0 xl:justify-between w-[calc(100%-48px)] self-center xl:self-end mb-32 '>
+    <div className='flex flex-col xl:flex-row xl:justify-between w-[calc(100%-48px)] self-center xl:self-end mb-32 '>
       <div className='relative  h-fit xl:w-3/5 min-w-[256px] max-w-5xl w-full self-center'>
         <div className='absolute h-[1px] w-28 bg-main-brown top-0' />
         <div className='absolute h-28 w-[1px] bg-main-brown top-0' />
@@ -20,8 +20,7 @@ const ForSell = ({ next, prev, forSell, changing }) => {
         </div>
         <LeftRightArrows next={next} prev={prev} />
         <div className='flex flex-col items-center sm:items-start gap-6 xl:gap-10'>
-          <span className='text-white uppercase font-light text-md md:text-xl lg:text-2xl xl:text-4xl text-center'>Описание Объекта </span>
-          <span className='text-white uppercase font-light text-sm md:text-lg lg:text-xl xl:text-2xl sm:text-justify'>
+          <span className='text-white font-light text-sm md:text-lg lg:text-xl xl:text-2xl'>
             {forSell.description}
           </span>
         </div>

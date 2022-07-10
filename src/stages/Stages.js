@@ -5,6 +5,13 @@ import stage2 from '../images/stages/stage2.png'
 import stage3 from '../images/stages/stage3.png'
 import stage4 from '../images/stages/stage4.png'
 
+const dates = [
+  'Февраль 2022',
+  'Июнь 2022',
+  'Сентябрь 2022',
+  'Январь 2023'
+]
+
 const Stages = () => {
   return (
     <>
@@ -14,10 +21,10 @@ const Stages = () => {
         <h1>Этапы строительства</h1>
       </div>
       <div className='self-center mb-40 mt-20 sm:w-4/5 w-1/2 gap-16 grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4'>
-        <Stage src={stage1} title='Фундамент' stageNumber={1} />
-        <Stage src={stage2} title='Каркас' stageNumber={2} />
-        <Stage src={stage3} title='Внутренние работы' stageNumber={3} />
-        <Stage src={stage4} title='Фасад' stageNumber={4} />
+        <Stage src={stage1} title='Фундамент' stageNumber={1} date={dates[0]} />
+        <Stage src={stage2} title='Каркас' stageNumber={2} date={dates[1]} />
+        <Stage src={stage3} title='Внутренние работы' stageNumber={3} date={dates[2]} />
+        <Stage src={stage4} title='Фасад' stageNumber={4} date={dates[3]} />
 
       </div>
     </>

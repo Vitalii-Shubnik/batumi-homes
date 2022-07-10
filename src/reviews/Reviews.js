@@ -90,9 +90,9 @@ const Reviews = () => {
         </div>
       </div>
       <div className='flex flex-row justify-between'>
-        <img src={reviewImages[(Math.abs(currentReview) * 3) % reviewImages.length]} className={`object-cover h-[37vw] w-[31%] duration-300 opacity-0 ${!changing && 'opacity-100'}	`} />
-        <img src={reviewImages[(Math.abs(currentReview) * 3 + 1) % reviewImages.length]} className={`object-cover h-[37vw] w-[31%] duration-300 opacity-0 ${!changing && 'opacity-100'}`} />
-        <img src={reviewImages[(Math.abs(currentReview) * 3 + 2) % reviewImages.length]} className={`object-cover h-[37vw] w-[31%] duration-300 opacity-0 ${!changing && 'opacity-100'}`} />
+        {reviews && reviews[Math.abs(currentReview) % reviews?.length]?.photos?.map((el, index) => {
+          return (index < 3) && <img key={index} src={el} className={`object-cover h-[37vw] w-[31%] duration-300 opacity-0 ${!changing && 'opacity-100'}	`} />
+        })}
       </div>
       {reviews[Math.abs(currentReview) % reviews.length] && <div className='relative w-full min-h-[192px] flex flex-row items-center gap-2'>
         <Review changing={changing} review={reviews[Math.abs(currentReview) % reviews.length]} next={increaseCurrentReview} prev={decreaseCurrentReview} />

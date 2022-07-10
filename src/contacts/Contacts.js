@@ -11,7 +11,7 @@ const Contacts = () => {
         Связаться с нами
       </div>
       <div className='flex flex-col gap-7 sm:pl-[52px] mt-20 md:mt-28 lg:mt-32'>
-        <ContactInfo src={phone} href={'tel:+995558925473'} alt={'phone'} text={'+995 558 92 54 73'} />
+        <ContactInfo src={phone} href={'tel:+995555971326'} alt={'phone'} text={'+995 555 97 13 26'} />
         <ContactInfo src={instagram} href={'https://www.instagram.com/batumi.homes/'} alt={'instagram'} text={'@batumi.homes'} />
         <Link to='contact' smooth={true} duration={500} ><ContactInfo src={mail} alt={'mail'} text={'batumi.realty.servises@gmail.com'} /></Link>
       </div>
