@@ -14,7 +14,7 @@ const Contact = () => {
     e.target.reset()
   }
   return (
-    <div className='px-[15%] pt-14 lg:pt-40 flex flex-col pb-14 lg:pb-40 justify-center items-center'>
+    <div className='px-[15%] pt-14 lg:pt-40 flex flex-col pb-14 mb-16 lg:pb-40 justify-center items-center'>
       <div className='uppercase text-main-brown w-fit font-light tracking-[6px] text-2xl sm:text-4xl xl:text-6xl'>
         Обратная связь
       </div>

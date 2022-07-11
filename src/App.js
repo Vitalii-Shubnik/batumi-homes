@@ -9,10 +9,12 @@ import Reviews from './reviews/Reviews';
 import ForSells from './forsell/ForSells';
 import MainObject from './mainobject/MainObject';
 import Stages from './stages/Stages';
+import SellButton from './sellButton/SellButton';
 
 const App = () => {
   return (
     <>
+      <SellButton />
       <Navbar />
       <div className='divide-y divide-gray-700'>
         <PageWraper name='homepage' customClassName='bg-no-repeat bg-cover bg-bg1' firstpage={true}>
